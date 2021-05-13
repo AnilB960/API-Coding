@@ -1,9 +1,7 @@
 package com.test.demo.services;
 
-import java.beans.JavaBean;
 import java.util.ArrayList;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
@@ -16,7 +14,7 @@ import com.test.demo.models.QuizResult;
 @Service
 public class OpenTdb {
 	
-	private static String baseUrl = ; 
+	private static String baseUrl = "https://opentdb.com/api.php?amount=5&category="; 
 	
 	public QuizResponse getData() {
 		QuizResponse qRes = new QuizResponse();
